@@ -134,11 +134,9 @@ then add the following to your `.emacs`:
 
 	```proto
 	message TestMessage {
-		//trying to expand here will work
-		enum TestEnum {
-
-		}
-		//trying to expand here will not work
+	  //trying to expand here will work
+	  enum TestEnum { }
+	  //trying to expand here will not work
 	}
 	```
 	This can probably be solved in `protobuf-fn/contex.el` -> `protobuf-in-class`. But for now, I have no idea how to do that (contribution welcomed).
