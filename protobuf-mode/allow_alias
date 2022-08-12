@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: allow_alias
+# key: oaa
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+option allow_alias = true;
+$0

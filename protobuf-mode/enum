@@ -1,0 +1,9 @@
+# -*- mode: snippet -*-
+# name: enum
+# key: enu
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+enum ${1:Name} {
+  ${2:UNSPECIFIED = 0;}
+  $0
+}

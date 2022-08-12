@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: map
+# key: fma
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+map<${1:KeyType}, ${2:ValueType}> ${3:name} = ${4:1};

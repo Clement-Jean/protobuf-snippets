@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: package
+# key: pkg
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+package ${1:package.name};
+
+$0

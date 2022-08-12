@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: sfixed32
+# key: fsf32
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+sfixed32 ${1:name} = ${2:1};

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: cc_enable_arenas
+# key: ocea
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+option cc_enable_arenas = true;
+$0

@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: float
+# key: ffl
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+float ${1:name} = ${2:1};

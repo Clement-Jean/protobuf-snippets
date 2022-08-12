@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: bytes
+# key: fby
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+bytes ${1:name} = ${2:1};

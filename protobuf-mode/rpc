@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: rpc
+# key: rpc
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+rpc ${1:Name} (${2:Request}) returns (${3:Response});

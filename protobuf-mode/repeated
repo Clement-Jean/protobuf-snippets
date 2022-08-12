@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: repeated
+# key: rep
+# condition: (protobuf-in-class "message")
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+repeated ${1:string} ${2:name} = ${3:1};

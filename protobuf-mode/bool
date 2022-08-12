@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: bool
+# key: fbo
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+bool ${1:name} = ${2:1};

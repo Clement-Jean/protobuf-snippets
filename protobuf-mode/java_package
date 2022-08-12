@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: java_package
+# key: ojp
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+option java_package = "${1:package.name}";
+$0

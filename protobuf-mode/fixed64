@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: fixed64
+# key: ff64
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+fixed64 ${1:name} = ${2:1};

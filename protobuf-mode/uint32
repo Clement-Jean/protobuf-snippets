@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: uint32
+# key: fu32
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+uint32 ${1:name} = ${2:1};

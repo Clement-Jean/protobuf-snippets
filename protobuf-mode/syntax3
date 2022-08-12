@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: syntax_proto3
+# key: sp3
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+syntax = "proto3";
+
+$0

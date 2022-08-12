@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: uint64
+# key: fu64
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+uint64 ${1:name} = ${2:1};
