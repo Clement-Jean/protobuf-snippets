@@ -13,7 +13,7 @@ YASnippet snippets for Protocol Buffers
 
 | done | key | expansion |
 | ---- | --- | --------- |
-| :white_check_mark: | sp2 | syntax = "proto2"; |
+| :white_check_mark: | sp2 | `syntax = "proto2";` |
 | :white_check_mark: | sp3 | syntax = "proto3"; |
 
 ### Options
@@ -113,7 +113,7 @@ cp -r protobuf-mode ~/.emacs.d/snippets/protobuf-mode
 then add the following to your `.emacs`:
 
 ```lisp
-(load "~/.emacs.d/proto/protobuf-fn")
+(mapc 'load (file-expand-wildcards "~/.emacs.d/proto/protobuf-fn/*.el"))
 ```
 
 ## Design Decisions
