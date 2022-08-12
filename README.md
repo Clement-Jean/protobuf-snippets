@@ -104,7 +104,7 @@ YASnippet snippets for Protocol Buffers
 
 I assume that you have [`protobuf-mode`](https://github.com/protocolbuffers/protobuf/blob/main/editors/protobuf-mode.el) and [`yasnippet`](https://github.com/joaotavora/yasnippet) installed
 
-```
+```sh
 git clone https://github.com/Clement-Jean/protobuf-snippets.git && cd protobuf-snippets
 cp -r protobuf-fn ~/.emacs.d/proto/protobuf-fn
 cp -r protobuf-mode ~/.emacs.d/snippets/protobuf-mode
@@ -112,7 +112,7 @@ cp -r protobuf-mode ~/.emacs.d/snippets/protobuf-mode
 
 then add the following to your `.emacs`:
 
-```
+```lisp
 (load "~/.emacs.d/proto/protobuf-fn")
 ```
 
