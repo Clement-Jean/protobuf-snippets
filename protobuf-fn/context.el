@@ -1,8 +1,8 @@
 (defun protobuf-in-class(keyword)
 	(cond
-  	; check if keyword is not in c-class-decl-kwds
-  	; in this case return null
-  	((not (member keyword (c-lang-const c-class-decl-kwds))) nil)
+		; check if keyword is not in c-class-decl-kwds
+		; in this case return null
+		((not (member keyword (c-lang-const c-class-decl-kwds))) nil)
   	; otherwise
   	(t (setq paren-state (c-parse-state))
   		 (setq least-enclosing (c-least-enclosing-brace paren-state))
