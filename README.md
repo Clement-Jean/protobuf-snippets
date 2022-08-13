@@ -128,7 +128,8 @@ then add the following to your `.emacs`:
 
 - The snippets will start with:
 	- 'o' for options
-	- 'f' for fields
+	- 'f' for fields (+ 'w' for well-known types)
+	- 'w' for well-known types (+ 'w' for wrappers)
 
 - The default value for enum is called `UNSPECIFIED`
 
