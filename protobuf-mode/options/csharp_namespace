@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: csharp_namespace
+# key: ocsn
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+option csharp_namespace = "${1:NamespaceName}";
+$0
