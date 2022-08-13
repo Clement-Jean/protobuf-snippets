@@ -13,7 +13,7 @@ YASnippet snippets for Protocol Buffers
 
 | done | key | expansion |
 | ---- | --- | --------- |
-| :white_check_mark: | sp2 | `syntax = "proto2";` |
+| :white_check_mark: | sp2 | syntax = "proto2"; |
 | :white_check_mark: | sp3 | syntax = "proto3"; |
 
 ### Options
@@ -22,7 +22,7 @@ YASnippet snippets for Protocol Buffers
 | ---- | --- | --------- |
 | :white_check_mark: | oaa | option allow_alias = true; |
 | :white_check_mark: | ocea | option cc_enable_arenas = true; |
-| :x: | ocn | option csharp_namespace = ""; |
+| :white_check_mark: | ocn | option csharp_namespace = "NamespaceName"; |
 | :white_check_mark: | odep | option deprecated = true; |
 | :white_check_mark: | ogp | option golang_package = "github.com/golang/go"; |
 | :white_check_mark: | ojmf | option java_multiple_files = true; |
@@ -36,13 +36,13 @@ YASnippet snippets for Protocol Buffers
 | done | key | expansion |
 | ---- | --- | --------- |
 | :white_check_mark: | imp | import "path/to/other/protos/proto"; |
-| :x: | impa | import "google/protobuf/any.proto"; |
-| :x: | impd | import "google/protobuf/duration.proto"; |
-| :x: | impe | import "google/protobuf/empty.proto"; |
-| :x: | impf | import "google/protobuf/field_mask.proto"; |
-| :x: | imps | import "google/protobuf/struct.proto"; |
-| :x: | impt | import "google/protobuf/timestamp.proto"; |
-| :x: | impw | import "google/protobuf/wrappers.proto"; |
+| :white_check_mark: | impa | import "google/protobuf/any.proto"; |
+| :white_check_mark: | impd | import "google/protobuf/duration.proto"; |
+| :white_check_mark: | impe | import "google/protobuf/empty.proto"; |
+| :white_check_mark: | impf | import "google/protobuf/field_mask.proto"; |
+| :white_check_mark: | imps | import "google/protobuf/struct.proto"; |
+| :white_check_mark: | impt | import "google/protobuf/timestamp.proto"; |
+| :white_check_mark: | impw | import "google/protobuf/wrappers.proto"; |
 
 ### Types
 
@@ -73,9 +73,9 @@ YASnippet snippets for Protocol Buffers
 | :white_check_mark: | fs64 | sint64 name = 1; |
 | :white_check_mark: | fst | string name = 1; |
 | :white_check_mark: | fu32 | uint32 name = 1; |
-| :x: | fwa | google.protobuf.Any name = 1; |
-| :x: | fwd | google.protobuf.Duration name = 1; |
-| :x: | fwt | google.protobuf.Timestamp name = 1; |
+| :white_check_mark: | fwa | google.protobuf.Any name = 1; |
+| :white_check_mark: | fwd | google.protobuf.Duration name = 1; |
+| :white_check_mark: | fwt | google.protobuf.Timestamp name = 1; |
 
 ### Well-Know Types
 

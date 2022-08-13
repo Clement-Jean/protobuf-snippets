@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: struct
+# key: imps
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+import "google/protobuf/struct.proto";
+$0

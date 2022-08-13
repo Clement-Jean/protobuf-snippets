@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: timestamp
+# key: impt
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+import "google/protobuf/timestamp.proto";
+$0

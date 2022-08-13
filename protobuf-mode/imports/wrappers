@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: wrappers
+# key: impw
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+import "google/protobuf/wrappers.proto";
+$0

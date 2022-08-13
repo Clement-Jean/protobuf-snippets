@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: duration
+# key: impd
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+import "google/protobuf/duration.proto";
+$0

@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: empty
+# key: impe
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+import "google/protobuf/empty.proto";
+$0
