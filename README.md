@@ -20,8 +20,10 @@ YASnippet snippets for Protocol Buffers
 
 | done | key | expansion |
 | ---- | --- | --------- |
+| :white_check_mark: | oaa | option allow_alias = true; |
 | :white_check_mark: | ocea | option cc_enable_arenas = true; |
-| :white_check_mark: | ocn | option csharp_namespace = ""; |
+| :x: | ocn | option csharp_namespace = ""; |
+| :white_check_mark: | odep | option deprecated = true; |
 | :white_check_mark: | ogp | option golang_package = "github.com/golang/go"; |
 | :white_check_mark: | ojmf | option java_multiple_files = true; |
 | :white_check_mark: | ojoc | option java_outer_classname = "ClassName"; |
@@ -79,25 +81,27 @@ YASnippet snippets for Protocol Buffers
 
 | done | key | expansion |
 | ---- | --- | --------- |
-| :x: | wa | google.protobuf.Any |
-| :x: | wd | google.protobuf.Duration |
-| :x: | we | google.protobuf.Empty |
-| :x: | wf | google.protobuf.FieldMask |
-| :x: | ws | google.protobuf.Struct |
-| :x: | wt | google.protobuf.Timestamp |
-| :x: | wwb | google.protobuf.BytesValue |
-| :x: | wwd | google.protobuf.DoubleValue |
-| :x: | wwf | google.protobuf.FloatValue |
-| :x: | wwi32 | google.protobuf.Int32Value |
-| :x: | wwi64 | google.protobuf.Int64Value |
-| :x: | wws32 | google.protobuf.StringValue |
-| :x: | wwu32 | google.protobuf.UInt32Value |
-| :x: | wwu64 | google.protobuf.UInt64Value |
+| :white_check_mark: | wa | google.protobuf.Any |
+| :white_check_mark: | wd | google.protobuf.Duration |
+| :white_check_mark: | we | google.protobuf.Empty |
+| :white_check_mark: | wf | google.protobuf.FieldMask |
+| :white_check_mark: | ws | google.protobuf.Struct |
+| :white_check_mark: | wt | google.protobuf.Timestamp |
+| :white_check_mark: | wwb | google.protobuf.BytesValue |
+| :white_check_mark: | wwd | google.protobuf.DoubleValue |
+| :white_check_mark: | wwf | google.protobuf.FloatValue |
+| :white_check_mark: | wwi32 | google.protobuf.Int32Value |
+| :white_check_mark: | wwi64 | google.protobuf.Int64Value |
+| :white_check_mark: | wws | google.protobuf.StringValue |
+| :white_check_mark: | wwu32 | google.protobuf.UInt32Value |
+| :white_check_mark: | wwu64 | google.protobuf.UInt64Value |
 
 ### Other
 
 | done | key | expansion |
 | ---- | --- | --------- |
+| :white_check_mark: | pkg | package package.name; |
+| :white_check_mark: | rep | repeated string name = 1; |
 | :white_check_mark: | rpc | rpc Name (Request) returns (Response); |
 
 ## Installation

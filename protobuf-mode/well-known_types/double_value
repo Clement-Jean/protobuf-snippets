@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: double_value
+# key: wwd
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+google.protobuf.DoubleValue
