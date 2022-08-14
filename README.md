@@ -132,16 +132,3 @@ then add the following to your `.emacs`:
 	- 'w' for well-known types (+ 'w' for wrappers)
 
 - The default value for enum is called `UNSPECIFIED`
-
-## Known Bugs
-
-- Trying to expand a `oneof` in a message that has nested messages/enums or another oneof will not work if you try to expand after the other children. eg:
-
-	```proto
-	message TestMessage {
-	  //trying to expand here will work
-	  enum TestEnum { }
-	  //trying to expand here will not work
-	}
-	```
-	This can probably be solved in `protobuf-fn/contex.el` -> `protobuf-in-class`. But for now, I have no idea how to do that (contribution welcomed).
