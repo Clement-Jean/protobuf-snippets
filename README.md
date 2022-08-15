@@ -11,38 +11,38 @@ YASnippet snippets for Protocol Buffers
 
 ### Syntax
 
-| done | key | expansion |
-| ---- | --- | --------- |
-| :white_check_mark: | sp2 | syntax = "proto2"; |
-| :white_check_mark: | sp3 | syntax = "proto3"; |
+| done | key | expansion | rule |
+| ---- | --- | --------- | ---- |
+| :white_check_mark: | sp2 | syntax = "proto2"; | At file level |
+| :white_check_mark: | sp3 | syntax = "proto3"; | At file level |
 
 ### Options
 
-| done | key | expansion |
-| ---- | --- | --------- |
-| :white_check_mark: | oaa | option allow_alias = true; |
-| :white_check_mark: | ocea | option cc_enable_arenas = true; |
-| :white_check_mark: | ocn | option csharp_namespace = "NamespaceName"; |
-| :white_check_mark: | odep | option deprecated = true; |
-| :white_check_mark: | ogp | option golang_package = "github.com/golang/go"; |
-| :white_check_mark: | ojmf | option java_multiple_files = true; |
-| :white_check_mark: | ojoc | option java_outer_classname = "ClassName"; |
-| :white_check_mark: | ojp | option java_package = "package.name"; |
-| :white_check_mark: | oocp | option objc_class_prefix = "ClassPrefix"; |
-| :white_check_mark: | o4 | option optimize_for = [MINIBUFFER_INPUT]; |
+| done | key | expansion | rule |
+| ---- | --- | --------- | ---- |
+| :white_check_mark: | oaa | option allow_alias = true; | In enum |
+| :white_check_mark: | ocea | option cc_enable_arenas = true; | At file level |
+| :white_check_mark: | ocn | option csharp_namespace = "NamespaceName"; | At file level |
+| :white_check_mark: | odep | [deprecated = true] |
+| :white_check_mark: | ogp | option golang_package = "github.com/golang/go"; | At file level |
+| :white_check_mark: | ojmf | option java_multiple_files = true; | At file level |
+| :white_check_mark: | ojoc | option java_outer_classname = "ClassName"; | At file level |
+| :white_check_mark: | ojp | option java_package = "package.name"; | At file level |
+| :white_check_mark: | oocp | option objc_class_prefix = "ClassPrefix"; | At file level |
+| :white_check_mark: | o4 | option optimize_for = [MINIBUFFER_INPUT]; | At file level |
 
 ### Imports
 
-| done | key | expansion |
-| ---- | --- | --------- |
-| :white_check_mark: | imp | import "path/to/other/protos/proto"; |
-| :white_check_mark: | impa | import "google/protobuf/any.proto"; |
-| :white_check_mark: | impd | import "google/protobuf/duration.proto"; |
-| :white_check_mark: | impe | import "google/protobuf/empty.proto"; |
-| :white_check_mark: | impf | import "google/protobuf/field_mask.proto"; |
-| :white_check_mark: | imps | import "google/protobuf/struct.proto"; |
-| :white_check_mark: | impt | import "google/protobuf/timestamp.proto"; |
-| :white_check_mark: | impw | import "google/protobuf/wrappers.proto"; |
+| done | key | expansion | rule |
+| ---- | --- | --------- | ---- |
+| :white_check_mark: | imp | import "path/to/other/protos/proto"; | At file level |
+| :white_check_mark: | impa | import "google/protobuf/any.proto"; | At file level |
+| :white_check_mark: | impd | import "google/protobuf/duration.proto"; | At file level |
+| :white_check_mark: | impe | import "google/protobuf/empty.proto"; | At file level |
+| :white_check_mark: | impf | import "google/protobuf/field_mask.proto"; | At file level |
+| :white_check_mark: | imps | import "google/protobuf/struct.proto"; | At file level |
+| :white_check_mark: | impt | import "google/protobuf/timestamp.proto"; | At file level |
+| :white_check_mark: | impw | import "google/protobuf/wrappers.proto"; | At file level |
 
 ### Types
 
@@ -54,28 +54,28 @@ YASnippet snippets for Protocol Buffers
 
 ### Fields
 
-| done | key | expansion |
-| ---- | --- | --------- |
-| :white_check_mark: | fbo | bool name = 1; |
-| :white_check_mark: | fby | bytes name = 1; |
-| :white_check_mark: | fdo | double name = 1; |
-| :white_check_mark: | ff32 | fixed32 name = 1; |
-| :white_check_mark: | ff64 | fixed64 name = 1; |
-| :white_check_mark: | ffl | float name = 1; |
-| :white_check_mark: | fi32 | int32 name = 1; |
-| :white_check_mark: | fi64 | int64 name = 1; |
-| :white_check_mark: | fma | map<KeyType, ValueType> name = 1; |
-| :white_check_mark: | fby | bytes name = 1; |
-| :white_check_mark: | foo | oneof {\n\t\n} |
-| :white_check_mark: | fsf32 | sfixed32 name = 1; |
-| :white_check_mark: | fsf64 | sfixed64 name = 1; |
-| :white_check_mark: | fs32 | sint32 name = 1; |
-| :white_check_mark: | fs64 | sint64 name = 1; |
-| :white_check_mark: | fst | string name = 1; |
-| :white_check_mark: | fu32 | uint32 name = 1; |
-| :white_check_mark: | fwa | google.protobuf.Any name = 1; |
-| :white_check_mark: | fwd | google.protobuf.Duration name = 1; |
-| :white_check_mark: | fwt | google.protobuf.Timestamp name = 1; |
+| done | key | expansion | rule |
+| ---- | --- | --------- | ---- |
+| :white_check_mark: | fbo | bool name = 1; | In message |
+| :white_check_mark: | fby | bytes name = 1; | In message |
+| :white_check_mark: | fdo | double name = 1; | In message |
+| :white_check_mark: | ff32 | fixed32 name = 1; | In message |
+| :white_check_mark: | ff64 | fixed64 name = 1; | In message |
+| :white_check_mark: | ffl | float name = 1; | In message |
+| :white_check_mark: | fi32 | int32 name = 1; | In message |
+| :white_check_mark: | fi64 | int64 name = 1; | In message |
+| :white_check_mark: | fma | map<KeyType, ValueType> name = 1; | In message |
+| :white_check_mark: | fby | bytes name = 1; | In message |
+| :white_check_mark: | foo | oneof {\n\t\n} | In message |
+| :white_check_mark: | fsf32 | sfixed32 name = 1; | In message |
+| :white_check_mark: | fsf64 | sfixed64 name = 1; | In message |
+| :white_check_mark: | fs32 | sint32 name = 1; | In message |
+| :white_check_mark: | fs64 | sint64 name = 1; | In message |
+| :white_check_mark: | fst | string name = 1; | In message |
+| :white_check_mark: | fu32 | uint32 name = 1; | In message |
+| :white_check_mark: | fwa | google.protobuf.Any name = 1; | In message |
+| :white_check_mark: | fwd | google.protobuf.Duration name = 1; | In message |
+| :white_check_mark: | fwt | google.protobuf.Timestamp name = 1; | In message |
 
 ### Well-Know Types
 
@@ -98,11 +98,13 @@ YASnippet snippets for Protocol Buffers
 
 ### Other
 
-| done | key | expansion |
-| ---- | --- | --------- |
-| :white_check_mark: | pkg | package package.name; |
-| :white_check_mark: | rep | repeated string name = 1; |
-| :white_check_mark: | rpc | rpc Name (Request) returns (Response); |
+| done | key | expansion | rule |
+| ---- | --- | --------- | ---- |
+| :white_check_mark: | pkg | package package.name; | At file level |
+| :white_check_mark: | rep | repeated string name = 1; | In message |
+| :white_check_mark: | rpc | rpc Name (Request) returns (Response); | In service | 
+| :white_check_mark: | com | /* your comment */ | |
+| :white_check_mark: | res | reserved 1; | In message |
 
 ## Installation
 
@@ -124,11 +126,10 @@ then add the following to your `.emacs`:
 
 - Certain options are taking booleans as value. However, generally only true is useful since the default is always false. Thus for these options, I'm not letting the user chose the value. This saves 1 TAB.
 - For the `optimize_for` option which has more complex value, I let the user enter the value in minibuffer. This is not optimal but you can have autocompletion and this avoid typos.
-- For options and imports, the snippet expansion will finish on the next line whereas for syntax and package, it will skip a line.
 
 - The snippets will start with:
 	- 'o' for options
 	- 'f' for fields (+ 'w' for well-known types)
 	- 'w' for well-known types (+ 'w' for wrappers)
 
-- The default value for enum is called `UNSPECIFIED`
+- The default value for enum is called `${ENUM_NAME_IN_UPPER_SNAKE_CASE}_UNSPECIFIED`
