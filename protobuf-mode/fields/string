@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: string
 # key: fst
+# condition: (protobuf-in-class "message")
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 string ${1:name} = ${2:1};

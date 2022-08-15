@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: timestamp
 # key: fwt
+# condition: (protobuf-in-class "message")
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 google.protobuf.Timestamp ${1:name} = ${2:1};

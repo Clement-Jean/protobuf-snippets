@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: double
 # key: fdo
+# condition: (protobuf-in-class "message")
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 double ${1:name} = ${2:1};

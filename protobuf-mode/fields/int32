@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: int32
 # key: fi32
+# condition: (protobuf-in-class "message")
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 int32 ${1:name} = ${2:1};

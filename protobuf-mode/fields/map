@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: map
 # key: fma
+# condition: (protobuf-in-class "message")
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 map<${1:KeyType}, ${2:ValueType}> ${3:name} = ${4:1};

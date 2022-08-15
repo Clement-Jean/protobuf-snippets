@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: any
 # key: fwa
+# condition: (protobuf-in-class "message")
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 google.protobuf.Any ${1:name} = ${2:1};
