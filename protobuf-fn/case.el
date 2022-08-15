@@ -1,3 +1,5 @@
+;; this code is coming from: https://github.com/magnars/s.el/blob/master/s.el
+
 (defun s-split (separator s &optional omit-nulls)
   "Split S into substrings bounded by matches for regexp SEPARATOR.
 If OMIT-NULLS is non-nil, zero-length substrings are omitted.
