@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: duration
 # key: fwd
-# condition: (protobuf-in-class "message")
+# condition: (or (protobuf-in-class "message") (protobuf-in-class "oneof"))
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 google.protobuf.Duration ${1:name} = ${2:1};
