@@ -1,7 +1,6 @@
 # -*- mode: snippet -*-
 # name: deprecated
 # key: odep
-# condition: (protobuf-in-class "enum")
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 [deprecated = true]
