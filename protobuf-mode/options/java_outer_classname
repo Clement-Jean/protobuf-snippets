@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: java_outer_classname
 # key: ojoc
+# condition: (protobuf-at-file-level)
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 option java_outer_classname = "${1:ClassName}";

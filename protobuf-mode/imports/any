@@ -1,7 +1,7 @@
 # -*- mode: snippet -*-
 # name: any
 # key: impa
+# condition: (protobuf-at-file-level)
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 import "google/protobuf/any.proto";
-$0

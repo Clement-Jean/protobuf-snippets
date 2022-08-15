@@ -1,6 +1,7 @@
 # -*- mode: snippet -*-
 # name: objc_class_prefix
 # key: oocp
+# condition: (protobuf-at-file-level)
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 option objc_class_prefix = "${1:ClassPrefix}";
