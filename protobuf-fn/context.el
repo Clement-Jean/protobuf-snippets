@@ -1,3 +1,6 @@
+(defun protobuf-at-file-level()
+	(not (c-least-enclosing-brace (c-parse-state))))
+
 (defun protobuf-in-class(keyword)
 	(cond
 		; check if keyword is not in c-class-decl-kwds
