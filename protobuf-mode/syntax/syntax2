@@ -1,8 +1,7 @@
 # -*- mode: snippet -*-
 # name: syntax_proto2
 # key: sp2
+# condition: (protobuf-at-file-level)
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 syntax = "proto2";
-
-$0
