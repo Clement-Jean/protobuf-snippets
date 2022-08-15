@@ -56,26 +56,26 @@ YASnippet snippets for Protocol Buffers
 
 | done | key | expansion | rule |
 | ---- | --- | --------- | ---- |
-| :white_check_mark: | fbo | bool name = 1; | In message |
-| :white_check_mark: | fby | bytes name = 1; | In message |
-| :white_check_mark: | fdo | double name = 1; | In message |
-| :white_check_mark: | ff32 | fixed32 name = 1; | In message |
-| :white_check_mark: | ff64 | fixed64 name = 1; | In message |
-| :white_check_mark: | ffl | float name = 1; | In message |
-| :white_check_mark: | fi32 | int32 name = 1; | In message |
-| :white_check_mark: | fi64 | int64 name = 1; | In message |
-| :white_check_mark: | fma | map<KeyType, ValueType> name = 1; | In message |
-| :white_check_mark: | fby | bytes name = 1; | In message |
-| :white_check_mark: | foo | oneof {\n\t\n} | In message |
-| :white_check_mark: | fsf32 | sfixed32 name = 1; | In message |
-| :white_check_mark: | fsf64 | sfixed64 name = 1; | In message |
-| :white_check_mark: | fs32 | sint32 name = 1; | In message |
-| :white_check_mark: | fs64 | sint64 name = 1; | In message |
-| :white_check_mark: | fst | string name = 1; | In message |
-| :white_check_mark: | fu32 | uint32 name = 1; | In message |
-| :white_check_mark: | fwa | google.protobuf.Any name = 1; | In message |
-| :white_check_mark: | fwd | google.protobuf.Duration name = 1; | In message |
-| :white_check_mark: | fwt | google.protobuf.Timestamp name = 1; | In message |
+| :white_check_mark: | fbo | bool name = 1; | In message/oneof |
+| :white_check_mark: | fby | bytes name = 1; | In message/oneof |
+| :white_check_mark: | fdo | double name = 1; | In message/oneof |
+| :white_check_mark: | ff32 | fixed32 name = 1; | In message/oneof |
+| :white_check_mark: | ff64 | fixed64 name = 1; | In message/oneof |
+| :white_check_mark: | ffl | float name = 1; | In message/oneof |
+| :white_check_mark: | fi32 | int32 name = 1; | In message/oneof |
+| :white_check_mark: | fi64 | int64 name = 1; | In message/oneof |
+| :white_check_mark: | fma | map<KeyType, ValueType> name = 1; | In message/oneof |
+| :white_check_mark: | fby | bytes name = 1; | In message/oneof |
+| :white_check_mark: | foo | oneof {\n\t\n} | In message/oneof |
+| :white_check_mark: | fsf32 | sfixed32 name = 1; | In message/oneof |
+| :white_check_mark: | fsf64 | sfixed64 name = 1; | In message/oneof |
+| :white_check_mark: | fs32 | sint32 name = 1; | In message/oneof |
+| :white_check_mark: | fs64 | sint64 name = 1; | In message/oneof |
+| :white_check_mark: | fst | string name = 1; | In message/oneof |
+| :white_check_mark: | fu32 | uint32 name = 1; | In message/oneof |
+| :white_check_mark: | fwa | google.protobuf.Any name = 1; | In message/oneof |
+| :white_check_mark: | fwd | google.protobuf.Duration name = 1; | In message/oneof |
+| :white_check_mark: | fwt | google.protobuf.Timestamp name = 1; | In message/oneof |
 
 ### Well-Know Types
 
@@ -101,14 +101,20 @@ YASnippet snippets for Protocol Buffers
 | done | key | expansion | rule |
 | ---- | --- | --------- | ---- |
 | :white_check_mark: | pkg | package package.name; | At file level |
-| :white_check_mark: | rep | repeated string name = 1; | In message |
+| :white_check_mark: | rep | repeated string name = 1; | In message/oneof |
 | :white_check_mark: | rpc | rpc Name (Request) returns (Response); | In service | 
 | :white_check_mark: | com | /* your comment */ | |
-| :white_check_mark: | res | reserved 1; | In message |
+| :white_check_mark: | res | reserved 1; | In message/enum |
 
 ## Installation
 
-I assume that you have [`protobuf-mode`](https://github.com/protocolbuffers/protobuf/blob/main/editors/protobuf-mode.el) and [`yasnippet`](https://github.com/joaotavora/yasnippet) installed
+I assume:
+
+- **that you have [`protobuf-mode`](https://github.com/protocolbuffers/protobuf/blob/main/editors/protobuf-mode.el) and [`yasnippet`](https://github.com/joaotavora/yasnippet) installed**
+- **that you add `oneof` to `c-class-decl-kwds` (which already exists) in your `protobuf-mode`. Like so:**
+	```lisp
+	(c-lang-defconst c-class-decl-kwds protobuf '("message" "enum" "service" "oneof"))
+	```
 
 ```sh
 git clone https://github.com/Clement-Jean/protobuf-snippets.git && cd protobuf-snippets
