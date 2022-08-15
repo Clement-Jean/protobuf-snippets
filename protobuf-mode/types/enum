@@ -4,6 +4,6 @@
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
 enum ${1:Name} {
-  ${2:UNSPECIFIED = 0;}
+  ${1:$(upcase (s-snake-case yas-text))}_UNSPECIFIED = 0;
   $0
 }
