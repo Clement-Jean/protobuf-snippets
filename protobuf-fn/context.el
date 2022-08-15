@@ -1,17 +1,20 @@
 (defun protobuf-at-file-level()
-	(not (c-least-enclosing-brace (c-parse-state))))
+	(cond
+		((eq (c-where-wrt-brace-construct) 'outwith-function) t)
+		(t nil)))
 
 (defun protobuf-in-class(keyword)
 	(cond
 		; check if keyword is not in c-class-decl-kwds
 		; in this case return null
-		((not (member keyword (c-lang-const c-class-decl-kwds))) nil)
-  	; otherwise
-  	(t (setq paren-state (c-parse-state))
-  		 (setq least-enclosing (c-least-enclosing-brace paren-state))
-
-			 (cond (least-enclosing ; if found a block
-				(goto-char (car paren-state)) ; go to parent scope
-				(c-beginning-of-decl-1) ; go to the beginning of declaration
-				(looking-at keyword)) ; check if we are looking at $keyword
-				(t nil))))) ; otherwise nil
+		((not (member keyword (c-lang-const c-class-decl-kwds)))
+			;(message "keyword not defined in classes: %s" keyword)
+			nil)
+  	; if we are in block
+  	((eq (c-where-wrt-brace-construct) 'in-block)
+			 (setq tmp (point)) ; save current point
+		 	 (backward-word) ; go before snippet
+			 (c-beginning-of-defun) ; go to the beginning of declaration
+			 (setq res (looking-at keyword))
+			 (goto-char tmp) ; go back to previous point
+			 res))) ; check if we are looking at $keyword
