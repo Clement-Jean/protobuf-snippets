@@ -4,4 +4,4 @@
 # condition: (or (protobuf-in-class "message") (protobuf-in-class "oneof"))
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
-repeated ${1:string} ${2:name} = ${3:1};
+repeated
