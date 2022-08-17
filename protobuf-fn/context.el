@@ -18,3 +18,8 @@
 			 (setq res (looking-at keyword))
 			 (goto-char tmp) ; go back to previous point
 			 res))) ; check if we are looking at $keyword
+
+(defun protobuf-not-repeated()
+	(backward-word) ; go before snippet
+	(backward-word) ; go to repeated or other
+	(not (looking-at "repeated")))
