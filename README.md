@@ -65,8 +65,7 @@ YASnippet snippets for Protocol Buffers
 | :white_check_mark: | fi32 | int32 name = 1; | In message/oneof |
 | :white_check_mark: | fi64 | int64 name = 1; | In message/oneof |
 | :white_check_mark: | fma | map<KeyType, ValueType> name = 1; | In message/oneof |
-| :white_check_mark: | fby | bytes name = 1; | In message/oneof |
-| :white_check_mark: | foo | oneof {\n\t\n} | In message/oneof |
+| :white_check_mark: | foo | oneof {\n\t\n} | In message/oneof/not repeated |
 | :white_check_mark: | fsf32 | sfixed32 name = 1; | In message/oneof |
 | :white_check_mark: | fsf64 | sfixed64 name = 1; | In message/oneof |
 | :white_check_mark: | fs32 | sint32 name = 1; | In message/oneof |
@@ -100,11 +99,11 @@ YASnippet snippets for Protocol Buffers
 
 | done | key | expansion | rule |
 | ---- | --- | --------- | ---- |
-| :white_check_mark: | pkg | package package.name; | At file level |
-| :white_check_mark: | rep | repeated string name = 1; | In message/oneof |
-| :white_check_mark: | rpc | rpc Name (Request) returns (Response); | In service | 
 | :white_check_mark: | com | /* your comment */ | |
+| :white_check_mark: | pkg | package package.name; | At file level |
+| :white_check_mark: | rep | repeated | In message/oneof |
 | :white_check_mark: | res | reserved 1; | In message/enum |
+| :white_check_mark: | rpc | rpc Name (Request) returns (Response); | In service | 
 
 ## Installation
 
