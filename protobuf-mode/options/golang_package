@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: golang_package
+# name: golang_package_opt
 # key: ogp
 # condition: (protobuf-at-file-level)
 # contributor: Clément Jean <clement.jean@epitech.eu>

@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: wrappers
+# name: wrappers_import
 # key: impw
 # condition: (protobuf-at-file-level)
 # contributor: Clément Jean <clement.jean@epitech.eu>

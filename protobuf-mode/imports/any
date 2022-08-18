@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: any
+# name: any_import
 # key: impa
 # condition: (protobuf-at-file-level)
 # contributor: Clément Jean <clement.jean@epitech.eu>

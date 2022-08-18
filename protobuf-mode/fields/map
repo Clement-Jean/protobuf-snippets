@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: map
+# name: map_field
 # key: fma
 # condition: (and (or (protobuf-in-class "message") (protobuf-in-class "oneof")) (protobuf-not-repeated))
 # contributor: Clément Jean <clement.jean@epitech.eu>

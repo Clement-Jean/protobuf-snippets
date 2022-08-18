@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: uint32
+# name: uint32_field
 # key: fu32
 # condition: (or (protobuf-in-class "message") (protobuf-in-class "oneof"))
 # contributor: Clément Jean <clement.jean@epitech.eu>

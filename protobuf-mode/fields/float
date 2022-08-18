@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: float
+# name: float_field
 # key: ffl
 # condition: (or (protobuf-in-class "message") (protobuf-in-class "oneof"))
 # contributor: Clément Jean <clement.jean@epitech.eu>

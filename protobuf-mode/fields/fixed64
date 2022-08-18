@@ -1,5 +1,5 @@
 # -*- mode: snippet -*-
-# name: fixed64
+# name: fixed64_field
 # key: ff64
 # condition: (or (protobuf-in-class "message") (protobuf-in-class "oneof"))
 # contributor: Clément Jean <clement.jean@epitech.eu>
