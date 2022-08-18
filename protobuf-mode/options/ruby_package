@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+# name: ruby_package_opt
+# key: orp
+# condition: (protobuf-at-file-level)
+# contributor: Clément Jean <clement.jean@epitech.eu>
+# --
+option ruby_package = "${1:}";

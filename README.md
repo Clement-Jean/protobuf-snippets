@@ -30,6 +30,11 @@ YASnippet snippets for Protocol Buffers
 | :white_check_mark: | ojp | option java_package = "package.name"; | At file level |
 | :white_check_mark: | oocp | option objc_class_prefix = "ClassPrefix"; | At file level |
 | :white_check_mark: | o4 | option optimize_for = [MINIBUFFER_INPUT]; | At file level |
+| :white_check_mark: | opcp | option php_class_prefix = ""; | At file level |
+| :white_check_mark: | opmn | option php_metadata_namespace = ""; | At file level |
+| :white_check_mark: | opn | option php_namespace = ""; | At file level |
+| :white_check_mark: | orp | option ruby_package = ""; | At file level |
+| :white_check_mark: | osp | option swift_prefix = ""; | At file level |
 
 ### Imports
 
