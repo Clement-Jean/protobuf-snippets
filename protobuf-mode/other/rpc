@@ -4,4 +4,4 @@
 # condition: (protobuf-in-class "service")
 # contributor: Clément Jean <clement.jean@epitech.eu>
 # --
-rpc ${1:Name} (${2:Request}) returns (${3:Response});
+rpc ${1:Name} (${2:$1Request}) returns (${3:$1Response});
